@@ -1,0 +1,9 @@
+[Unit]
+Description=The IoTA Web service
+After=network.target
+
+[Service]
+ExecStart=/bin/su root -c 'python /home/root/iota/application.py'
+
+[Install]
+WantedBy=default.target
